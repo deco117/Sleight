@@ -1,5 +1,7 @@
 # Sleight — per-note expression for any keyboard
 
+**[Download Sleight for Windows (zip, 158 MB)](https://github.com/deco117/Sleight/releases/latest/download/Sleight.zip)** · [Demo video](https://youtu.be/vwOdRIJnrD8) · [Setup guide video](https://youtu.be/FGAhWjG5eXo) · [All releases](https://github.com/deco117/Sleight/releases)
+
 Turn an ordinary MIDI keyboard into a per-note expressive controller with a
 plain webcam. You play normally; a camera above the keys watches the finger
 still holding each note and turns its small movements into independent
@@ -45,8 +47,8 @@ Set it up in about 5 minutes: [setup guide (loopMIDI + Reaper)](https://youtu.be
 
 ## Get it
 
-**Windows build (no Python needed):** download the latest zip from the
-[Releases page](../../releases), unzip anywhere and run `Sleight.exe`.
+**Windows build (no Python needed):** [download the latest zip](https://github.com/deco117/Sleight/releases/latest/download/Sleight.zip)
+(or see the [Releases page](https://github.com/deco117/Sleight/releases)), unzip anywhere and run `Sleight.exe`.
 Windows 10/11, any class-compliant MIDI keyboard, a webcam mounted above the keys.
 
 **From source:** Python 3.12, then
