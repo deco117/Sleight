@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 470" width="1200" height="470" role="img" aria-label="How Sleight works: a webcam above the keyboard tracks each finger, and each finger's movement becomes per-note expression sent to any synth.">
+  <defs>
+    <linearGradient id="beam" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#ff5fa2" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#ff5fa2" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="fov" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3ddcc8" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#3ddcc8" stop-opacity="0.05"/>
+    </linearGradient>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#e8ecf1"/>
+    </marker>
+    <marker id="arrTeal" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#3ddcc8"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="470" rx="18" fill="#0f1115"/>
+
+  <text x="600" y="44" text-anchor="middle" font-family="system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#e8ecf1">Webcam  →  keyboard  →  fingers  →  expression</text>
+
+  <!-- card backgrounds -->
+  <rect x="30"  y="70" width="360" height="330" rx="14" fill="#171a21" stroke="#2a2f3a"/>
+  <rect x="420" y="70" width="360" height="330" rx="14" fill="#171a21" stroke="#2a2f3a"/>
+  <rect x="810" y="70" width="360" height="330" rx="14" fill="#171a21" stroke="#2a2f3a"/>
+
+  <!-- between-card arrows -->
+  <path d="M396 235 H414" stroke="#3ddcc8" stroke-width="3" fill="none" marker-end="url(#arrTeal)"/>
+  <path d="M786 235 H804" stroke="#3ddcc8" stroke-width="3" fill="none" marker-end="url(#arrTeal)"/>
+
+  <!-- ============ CARD 1: webcam above the keys (side view) ============ -->
+  <g font-family="system-ui, Segoe UI, Helvetica, Arial, sans-serif">
+    <text x="50" y="102" font-size="15" font-weight="700" fill="#3ddcc8">1</text>
+    <text x="68" y="102" font-size="17" font-weight="600" fill="#e8ecf1">Any webcam, above the keys</text>
+
+    <!-- stand -->
+    <path d="M340 330 V138 H216" stroke="#6b7385" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- field of view -->
+    <polygon points="216,178 80,318 352,318" fill="url(#fov)" stroke="#3ddcc8" stroke-width="1.5" stroke-dasharray="5 5"/>
+    <!-- camera -->
+    <rect x="172" y="124" width="88" height="40" rx="9" fill="#2a2f3a" stroke="#3ddcc8" stroke-width="2"/>
+    <circle cx="216" cy="168" r="11" fill="#0f1115" stroke="#3ddcc8" stroke-width="3"/>
+    <circle cx="216" cy="168" r="4" fill="#3ddcc8"/>
+    <!-- keyboard slab -->
+    <rect x="62" y="318" width="300" height="42" rx="7" fill="#d9dfe8"/>
+    <g fill="#1b1f27">
+      <rect x="86"  y="318" width="14" height="24" rx="2"/>
+      <rect x="114" y="318" width="14" height="24" rx="2"/>
+      <rect x="156" y="318" width="14" height="24" rx="2"/>
+      <rect x="184" y="318" width="14" height="24" rx="2"/>
+      <rect x="212" y="318" width="14" height="24" rx="2"/>
+      <rect x="254" y="318" width="14" height="24" rx="2"/>
+      <rect x="282" y="318" width="14" height="24" rx="2"/>
+      <rect x="324" y="318" width="14" height="24" rx="2"/>
+    </g>
+    <!-- fingertips on keys -->
+    <circle cx="136" cy="308" r="8" fill="#ff5fa2"/>
+    <circle cx="205" cy="308" r="8" fill="#ff5fa2"/>
+    <circle cx="268" cy="308" r="8" fill="#ff5fa2"/>
+    <text x="210" y="384" text-anchor="middle" font-size="13.5" fill="#9aa3b5">Phone, desk arm or tripod - looking straight down</text>
+  </g>
+
+  <!-- ============ CARD 2: each fingertip is tracked (top-down) ============ -->
+  <g font-family="system-ui, Segoe UI, Helvetica, Arial, sans-serif">
+    <text x="440" y="102" font-size="15" font-weight="700" fill="#3ddcc8">2</text>
+    <text x="458" y="102" font-size="17" font-weight="600" fill="#e8ecf1">Each fingertip owns one note</text>
+
+    <!-- light beams -->
+    <rect x="531" y="125" width="6" height="170" rx="3" fill="url(#beam)"/>
+    <rect x="603" y="150" width="6" height="145" rx="3" fill="url(#beam)"/>
+    <rect x="675" y="120" width="6" height="175" rx="3" fill="url(#beam)"/>
+
+    <!-- keys, top-down -->
+    <g stroke="#9aa3b5" stroke-width="1">
+      <rect x="450" y="295" width="30" height="66" fill="#f1f4f8"/>
+      <rect x="480" y="295" width="30" height="66" fill="#f1f4f8"/>
+      <rect x="510" y="295" width="30" height="66" fill="#f1f4f8"/>
+      <rect x="540" y="295" width="30" height="66" fill="#f1f4f8"/>
+      <rect x="570" y="295" width="30" height="66" fill="#f1f4f8"/>
+      <rect x="600" y="295" width="30" height="66" fill="#f1f4f8"/>
+      <rect x="630" y="295" width="30" height="66" fill="#f1f4f8"/>
+      <rect x="660" y="295" width="30" height="66" fill="#f1f4f8"/>
+      <rect x="690" y="295" width="30" height="66" fill="#f1f4f8"/>
+      <rect x="720" y="295" width="30" height="66" fill="#f1f4f8"/>
+    </g>
+    <g fill="#1b1f27">
+      <rect x="470" y="295" width="20" height="40" rx="2"/>
+      <rect x="500" y="295" width="20" height="40" rx="2"/>
+      <rect x="560" y="295" width="20" height="40" rx="2"/>
+      <rect x="590" y="295" width="20" height="40" rx="2"/>
+      <rect x="620" y="295" width="20" height="40" rx="2"/>
+      <rect x="680" y="295" width="20" height="40" rx="2"/>
+      <rect x="710" y="295" width="20" height="40" rx="2"/>
+    </g>
+
+    <!-- fingertip glows -->
+    <circle cx="534" cy="292" r="17" fill="#ff5fa2" opacity="0.35"/>
+    <circle cx="534" cy="292" r="8"  fill="#ff5fa2"/>
+    <circle cx="606" cy="292" r="17" fill="#ff5fa2" opacity="0.35"/>
+    <circle cx="606" cy="292" r="8"  fill="#ff5fa2"/>
+    <circle cx="678" cy="292" r="17" fill="#ff5fa2" opacity="0.35"/>
+    <circle cx="678" cy="292" r="8"  fill="#ff5fa2"/>
+
+    <!-- movement cues -->
+    <path d="M498 262 H568" stroke="#e8ecf1" stroke-width="2.5" fill="none" marker-start="url(#arr)" marker-end="url(#arr)"/>
+    <text x="534" y="252" text-anchor="middle" font-size="13" font-weight="600" fill="#e8ecf1">sideways</text>
+
+    <path d="M606 268 V190" stroke="#e8ecf1" stroke-width="2.5" fill="none"/>
+    <path d="M598 198 L606 186 L614 198" stroke="#e8ecf1" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+    <text x="606" y="180" text-anchor="middle" font-size="13" font-weight="600" fill="#e8ecf1">forward / back</text>
+
+    <path d="M650 280 C650 252 706 252 706 280" stroke="#e8ecf1" stroke-width="2.5" fill="none" marker-end="url(#arr)"/>
+    <text x="678" y="244" text-anchor="middle" font-size="13" font-weight="600" fill="#e8ecf1">curl</text>
+
+    <text x="600" y="386" text-anchor="middle" font-size="13.5" fill="#9aa3b5">The finger stays on its key, so there's no guessing</text>
+  </g>
+
+  <!-- ============ CARD 3: expression out ============ -->
+  <g font-family="system-ui, Segoe UI, Helvetica, Arial, sans-serif">
+    <text x="830" y="102" font-size="15" font-weight="700" fill="#3ddcc8">3</text>
+    <text x="848" y="102" font-size="17" font-weight="600" fill="#e8ecf1">Per-note expression, out</text>
+
+    <g font-size="16" fill="#e8ecf1">
+      <rect x="834" y="124" width="312" height="48" rx="10" fill="#1f232c"/>
+      <text x="852" y="146" font-weight="700">sideways</text>
+      <text x="852" y="164" font-size="14" fill="#9aa3b5">pitch bend, and wiggle = vibrato</text>
+
+      <rect x="834" y="184" width="312" height="48" rx="10" fill="#1f232c"/>
+      <text x="852" y="206" font-weight="700">forward / back</text>
+      <text x="852" y="224" font-size="14" fill="#9aa3b5">timbre (CC 74)</text>
+
+      <rect x="834" y="244" width="312" height="48" rx="10" fill="#1f232c"/>
+      <text x="852" y="266" font-weight="700">curl</text>
+      <text x="852" y="284" font-size="14" fill="#9aa3b5">mod (CC 1), or anything you map</text>
+    </g>
+
+    <path d="M990 296 V320" stroke="#3ddcc8" stroke-width="3" fill="none" marker-end="url(#arrTeal)"/>
+    <rect x="834" y="326" width="312" height="52" rx="10" fill="#0f1115" stroke="#3ddcc8" stroke-width="1.5"/>
+    <text x="990" y="349" text-anchor="middle" font-size="16" font-weight="700" fill="#3ddcc8">MPE  or  MIDI 2.0</text>
+    <text x="990" y="368" text-anchor="middle" font-size="14" fill="#9aa3b5">into any synth, in any DAW</text>
+  </g>
+
+  <text x="600" y="440" text-anchor="middle" font-family="system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="15" fill="#9aa3b5">Your keyboard stays exactly as it is. Chords: every note moves on its own.</text>
+</svg>

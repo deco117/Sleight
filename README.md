@@ -2,6 +2,8 @@
 
 **[Download Sleight for Windows (zip, 158 MB)](https://github.com/deco117/Sleight/releases/latest/download/Sleight.zip)** · [Demo video](https://youtu.be/vwOdRIJnrD8) · [Setup guide video](https://youtu.be/FGAhWjG5eXo) · [All releases](https://github.com/deco117/Sleight/releases)
 
+![How Sleight works: a webcam above the keyboard tracks each fingertip, and each finger's movement becomes per-note expression](assets/how-it-works.svg)
+
 Turn an ordinary MIDI keyboard into a per-note expressive controller with a
 plain webcam. You play normally; a camera above the keys watches the finger
 still holding each note and turns its small movements into independent
