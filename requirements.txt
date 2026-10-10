@@ -1,0 +1,13 @@
+# Sleight - runtime deps. Python 3.12.
+#
+# mediapipe is pinned hard: 1.x is the Tasks API only (no mp.solutions), which
+# is what handtracking.py is written against. A 0.10.x would not import.
+mediapipe==1.0.1
+
+opencv-python>=4.9
+numpy>=1.26
+python-rtmidi>=1.5      # MidiIn/MidiOut, and open_virtual_port on mac/linux
+python-osc>=1.8         # only used by the surge_osc output mode
+
+# optional - only for output_mode = "vst_host":
+#   pip install pedalboard sounddevice

@@ -1,0 +1,49 @@
+{
+  "output_mode": "mpe",
+  "midi_in_match": "",
+  "midi_out_match": "Sleight",
+  "midi2_bridge_exe": "",
+  "lowest_note": 36,
+  "highest_note": 96,
+  "mpe_master_channel": 1,
+  "mpe_member_channels": 15,
+  "per_note_pitch_bend_range": 2,
+  "camera_index": 0,
+  "camera_width": 1280,
+  "camera_height": 720,
+  "flip_horizontal": true,
+  "max_hands": 2,
+  "min_detection_confidence": 0.6,
+  "min_tracking_confidence": 0.5,
+  "glide_full_scale": 0.06,
+  "slide_full_scale": 0.5,
+  "curl_full_scale": 0.35,
+  "glide_deadzone": 0.004,
+  "smoothing_ms": 45.0,
+  "send_rate_hz": 60.0,
+  "invert_glide": false,
+  "invert_slide": false,
+  "invert_curl": false,
+  "gesture_map": {
+    "glide": {
+      "target": "pitchbend"
+    },
+    "slide": {
+      "target": "cc",
+      "cc": 74
+    },
+    "curl": {
+      "target": "cc",
+      "cc": 1
+    }
+  },
+  "write_ump_log": true,
+  "ump_log_path": "session.midi2.log",
+  "ump_group": 0,
+  "vst_plugin_path": "",
+  "vst_preset_dir": "",
+  "vst_start_preset": "",
+  "vst_block_size": 512,
+  "vst_sample_rate": 48000,
+  "audio_output_device": ""
+}

@@ -1,0 +1,7 @@
+* text=auto eol=lf
+*.png binary
+*.ico binary
+*.task binary
+*.fxp binary
+*.exe binary
+*.mp4 binary

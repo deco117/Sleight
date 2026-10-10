@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+build/
+dist/
+*.spec
+config.json
+calibration.json
+session.midi2.log
+*.mp4
+bin/
+obj/
+publish/
+midi2_bridge_inbox/vendor/
